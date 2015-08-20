@@ -10,6 +10,16 @@
 	display: inline-block;
 }
 
+.show-container_body {
+  background-color: #ffffff;
+	line-height: 0.97;
+  margin: 2% 0 2% 10%;
+	width: 80%;
+	display: block;
+  padding: 5% 0;
+  font-size: 1.5em;
+}
+
 .tile_movie-title {
 	border: 5px solid #C0C6C9;
   background-color: #ffffff;
@@ -35,8 +45,25 @@
   overflow: hidden;
 }
 
-.tile_movie-title_thumbnail {
+.media_thumbnail {
 	display: inline-block;
 	float: left;
 	margin-right: 3%;
+}
+
+.tile_movie-title_score {
+	font-size: 0.8em;
+	font-family: 'Dosis', sans-serif;
+	color: #ABADB3;
+}
+
+.tile_movie-flag {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-color: transparent blue transparent transparent;
+  border-style: solid;
+  border-width: 0 52px 52px 52px;
+  height: 0px;
+  width: 0px;
 }

@@ -1,0 +1,14 @@
+.header_movie-title, .header_movie-score {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+}
+
+.header_movie-title {
+	font-size: 5em;
+}
+
+.header_movie-score {
+	font-size: 1.8em;
+}
+
+

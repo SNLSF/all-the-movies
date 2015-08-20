@@ -14,6 +14,27 @@
  *= require_self
  */
 
+/***************COLOR OPTIONS***************/
+/*
+red: 
+#C55B4A
+
+light grey:
+#C0C6C9
+
+dark grey:
+#ABADB3
+
+off white: 
+#F9F9F9
+
+*/
+/***************FONT OPTIONS****************/
+/*
+font-family: 'Dosis', sans-serif;
+
+font-family: 'Oswald', sans-serif;
+*/
 
 body {
 	background-color: #F9F9F9;
@@ -43,4 +64,9 @@ a:hover {
 	font-size: 1.5em;
 	margin-top: 3%;
 	font-weight: bold;
+}
+
+.home {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
 }
