@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+	background-color: #F9F9F9;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	color: #C55B4A;
+}
+
+.container_body {
+	display: block;
+}
+
+.date {
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 3%;
+	font-weight: bold;
+}

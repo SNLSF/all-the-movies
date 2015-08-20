@@ -1,3 +1,42 @@
 // Place all the styles related to the movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper_movies {
+	padding-right: 5%;
+	overflow: hidden;
+	margin-top: 80px;
+	width: 90%;
+	display: inline-block;
+}
+
+.tile_movie-title {
+	border: 5px solid #C0C6C9;
+  background-color: #ffffff;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-family: 'Oswald', sans-serif;
+	line-height: 0.97;
+  float: right;
+  position: relative;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 28%;
+  padding-bottom: 8%;
+}
+
+.tile_movie-title_inner {
+	position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.tile_movie-title_thumbnail {
+	display: inline-block;
+	float: left;
+	margin-right: 3%;
+}

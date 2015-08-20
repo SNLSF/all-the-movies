@@ -6,6 +6,7 @@ class CreateMovies < ActiveRecord::Migration
     	t.date :release_date
     	t.string :thumbnail
     	t.string :url
+      t.string :score
 
       t.timestamps null: false
     end

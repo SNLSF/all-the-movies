@@ -1,6 +1,8 @@
 $(document).on('page:change', function() {
 
-	var request = $ajax({
+	console.log("Requesting Movies...");
+
+	var request = $.ajax({
 		url: "https://metacritic-2.p.mashape.com/movie-list/new-releases?order_by=metascore",
 		type: "GET",
 		data: {},
@@ -11,13 +13,22 @@ $(document).on('page:change', function() {
 	});
 
 	request.success(function(data) {
-		console.log("we did it!");
-		// request = $ajax({
-		// 	url: '/movies',
-		// 	type: 'POST',
-		// 	data: {data: data},
-		// 	dataType: 'json'
-		// });
+		request = $.ajax({
+			url: '/movies',
+			type: 'POST',
+			data: {data: data},
+			dataType: 'json'
+		});
+		request.success(function(data) {
+			console.log(data);
+			for (var i=0; i <= data["movies"].length; i++) {
+				$('.wrapper_movies').append("<a href='/movies/"+ (i+1) +"'><div class='tile_movie-title' data-id="+ (i+1) +"><div class='tile_movie-title_inner'><img src="+ data["movies"][i]["thumbnail"] +" class='tile_movie-title_thumbnail'> "+ data["movies"][i]["title"] +" </div></div></a>");
+			};
+		})
 	})
+
+	request.error(function(err) {
+		alert(err);
+	});
 
 });

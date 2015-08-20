@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20150820015552) do
     t.date     "release_date"
     t.string   "thumbnail"
     t.string   "url"
+    t.string   "score"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
